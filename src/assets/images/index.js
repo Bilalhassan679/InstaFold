@@ -1,0 +1,11 @@
+// EXPORT IMAGE
+export { default as profileActive } from '../images/profileActive.png'
+export { default as profile } from '../images/profile.png'
+export { default as setting } from '../images/setting.png'
+export { default as chat } from '../images/chat.png'
+export { default as chatActive } from '../images/chatActive.png'
+export { default as home } from '../images/home.png'
+export { default as homeActive } from '../images/homeActive.png'
+export { default as settingActive } from '../images/settingActive.png'
+export { default as search } from '../images/search.png'
+export { default as searchActive } from '../images/searchActive.png'
