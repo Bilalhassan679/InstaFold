@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   LogBox,
   Platform,
+  SafeAreaView,
   StatusBar,
   StyleSheet,
   View,
@@ -43,16 +44,19 @@ function AppTwo() {
   }, []);
   return (
     <>
-         <StatusBar backgroundColor={'#ff1791'} barStyle={'light-content'} />
+         <StatusBar backgroundColor={'#ffffff'} barStyle={'light-content'} />
 
       {isVisible ?
       SplashScreen()
       
       :
-
+      <>
+        <SafeAreaView/>
         <NavigationContainer >
           <StackNavigatior />
-        </NavigationContainer>}
+        </NavigationContainer>
+      </>
+        }
     </>
   );
 }
