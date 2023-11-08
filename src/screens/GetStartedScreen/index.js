@@ -6,7 +6,7 @@ import { hp, wp } from '../../theme/responsive'
 import ButtonComponent from '../../components/ButtonComponent'
 import FastImage from 'react-native-fast-image'
 import { colors } from '../../theme/color'
-const WelcomeScreen = () => {
+const WelcomeScreen = ({navigation}) => {
   const [user,setUser]=useState(true)
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -21,13 +21,13 @@ const WelcomeScreen = () => {
         resizeMode={FastImage.resizeMode.contain}
         
         />}
-      {/* <FastImage
-      tintColor={user ? '#522888':colors.black}
+      <FastImage
+        tintColor={user ? '#522888':colors.black}
         style={{...styles.customerImge,tintColor:'red'}}
         source={require('../../assets/images/customer.png')}
         resizeMode={FastImage.resizeMode.contain}
         
-        /> */}
+        />
         <TextComponent text={'Customer'} styles={{marginTop:hp('1')}}/>
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>setUser(false)} style={{...styles.customer,
@@ -51,7 +51,7 @@ const WelcomeScreen = () => {
        <TextComponent text={'Contractor'} styles={{marginTop:hp('1')}}/> 
       </TouchableOpacity>
       <View style={{marginTop:hp('15')}}>
-      <ButtonComponent text={'Let’s Get Started'}  width={'85'}/>
+      <ButtonComponent text={'Let’s Get Started'}  width={'85'} onPress={()=>navigation.navigate('LoginScreen')}/>
       <View style={styles.lastContainer}> 
       <TextComponent styles={styles.alreadyText} numberOfLines={2} text={"Already have an account? "}/>
       <TextComponent styles={styles.loginText} numberOfLines={2} text={"Login"}/>

@@ -3,7 +3,7 @@ import Schemas from "../../utils/Validation";
 
 const useLoginScreen = () => {
     const {handleSubmit, errors, reset, control, getValues} = useFormHook(
-        Schemas.logIn,
+        Schemas.signUp,
       );
   return {handleSubmit, errors, reset, control, getValues}
   

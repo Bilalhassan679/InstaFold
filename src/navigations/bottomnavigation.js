@@ -126,15 +126,16 @@ const styles = StyleSheet.create({
   tabarView: (focused, last) => ({
     width: 'auto',
 
-    bottom: hp('-0.5'),
+    bottom: hp('-0.9'),
   }),
 
   imgstyle: {
     resizeMode:'contain',
     // aspectRatio:1,
-    width:wp('14'),
+    width:wp('13'),
+    // backgroundColor:'red',
     // resizeMode: 'contain',
-    height: hp('14'),
+    height: hp('6'),
 
   },
 });

@@ -22,8 +22,10 @@ const LoginScreen = ({ navigation }) => {
   return (
 
     <ScrollView
+    bounces={false}
+      showsVerticalScrollIndicator={false}
       contentContainerStyle={styles.container}>
-      <Image style={{ aspectRatio: 1, height: hp('20'), marginTop: hp('10') }} resizeMode='contain' source={require('../../assets/images/BigLogo.png')} />
+      <Image style={{ aspectRatio: 1, height: hp('20'), marginTop: hp('6') }} resizeMode='contain' source={require('../../assets/images/BigLogo.png')} />
       <ImageBackground style={styles.imagebackground} imageStyle={styles.imageStyle} resizeMode='cover' source={require('../../assets/images/bgBook.png')}>
         <TextComponent text={'Login '} styles={styles.login} />
         <TextComponent text={'Login with your Information'} styles={styles.loginInfo} />
@@ -58,10 +60,10 @@ const LoginScreen = ({ navigation }) => {
           }}
         />
         <TextComponent text={'Forget Password ?'} styles={styles.forget} />
-        <ButtonComponent text={'Login Now'} buttonStyle={styles.loginButton} />
+        <ButtonComponent text={'Login Now'} buttonStyle={styles.loginButton} onPress={()=>navigation.navigate('SignUpScreen')} />
         <View style={styles.lastContainer}>
           <TextComponent styles={styles.alreadyText} numberOfLines={2} text={"Don’t have an Account? "} />
-          <TextComponent styles={styles.loginText} numberOfLines={2} text={"Sign Up"} />
+          <TextComponent styles={styles.loginText} numberOfLines={2} text={"Sign Up"} onPress={() => navigation.navigate('SignUpScreen') }/>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
           <Divider dividerStyle={styles.divider} />
@@ -77,7 +79,7 @@ const LoginScreen = ({ navigation }) => {
 
             />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => { }}>
+          <TouchableOpacity onPress={() => navigation.navigate('SignUpScreen') }>
             <FastImage
               style={{ ...styles.logo, tintColor: 'red' }}
               source={require('../../assets/images/fbLogo.png')}

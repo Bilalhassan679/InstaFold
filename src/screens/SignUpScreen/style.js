@@ -4,32 +4,58 @@ import { hp, wp } from "../../theme/responsive";
 import { colors } from "../../theme/color";
 
 export const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        alignItems:'center',
+    container: {
+        alignItems: 'center',
     },
-    welcomeText:{
+
+    loginView: {
+        padding: 10,
+        borderTopLeftRadius: 100,
+        borderTopRightRadius: 100,
+        backgroundColor: colors.bgLogin,
+        width: wp('100')
+    },
+    imagebackground: { 
+        marginTop:hp('5'),
+        width: wp('100'),
+        backgroundColor: colors.purpleColor,
+        padding: 20,
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+    },
+    imageStyle:{
+        width:wp('100'),
+        height: hp('120'),
+        
+    },
+    login:{
+        color:'#ffffff',
         fontSize:FontSize.scale32,
-        marginTop:hp('8'),
-        fontWeight:'400'
-        
+        fontWeight:'700'
     },
-    bigText:{
-        fontSize:FontSize.scale20,
-        marginTop:hp('8'),
-        width:wp('60'),
-        textAlign:'center',
+    loginInfo:{
+        color:colors.halfWhite1,
+        fontSize:FontSize.scale16,
         fontWeight:'400'
-        
     },
+    forget:{
+        color:colors.white,
+        fontSize:FontSize.scale16,
+        fontWeight:'400',
+        marginTop:hp('2'),
+        textAlign:'center'
+    },
+    loginButton:{
+        marginTop:hp('5')
+    }, 
     alreadyText:{
-        color:colors.black,
-        fontSize:hp('2'),
+        color:colors.white,
+        fontSize:FontSize.scale14,
         fontWeight:'400'
     },
     loginText:{
-        color:colors.secondary,
-        fontSize:hp('2'),
+        color:colors.primary,
+        fontSize:FontSize.scale14,
         fontWeight:'400'
 
     },
@@ -38,5 +64,14 @@ export const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         marginTop:hp('3')
-    }
+    },
+    divider:{
+        width:wp('30'),borderColor:colors.halfWhite1,borderBottomWidth:1,marginTop:hp('2')},
+        orwith:
+            {fontSize:FontSize.scale20,marginHorizontal:hp('2'),color:colors.halfWhite,},
+            logo:{
+                width:wp('15'),
+                margin:10,
+                height:hp('8'),
+            }
 })

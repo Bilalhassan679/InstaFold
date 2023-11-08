@@ -13,9 +13,9 @@ const WelcomeScreen = ({navigation}) => {
       <TextComponent styles={styles.bigText} numberOfLines={2} text={"We Fold Your Clean Clothes, So You Don't Have To"}/>
       <View style={{marginTop:hp('20')}}>
       <ButtonComponent onPress={()=>navigation.navigate('GetStartedScreen')} text={'Let’s Get Started'}  width={'85'}/>
-      <View style={styles.lastContainer}> 
-      <TextComponent styles={styles.alreadyText} numberOfLines={2} text={"Already have an account? "}/>
-      <TextComponent styles={styles.loginText} numberOfLines={2} text={"Login"}/>
+      <View style={styles.lastContainer}>  
+      <TextComponent styles={styles.alreadyText} numberOfLines={2} text={"Already have an account? "} />
+      <TextComponent styles={styles.loginText} numberOfLines={2} text={"Login"} onPress={()=>navigation.navigate('LoginScreen')}/>
 
       </View>
       </View>
