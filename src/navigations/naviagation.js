@@ -18,8 +18,11 @@ export default function StackNavigatior() {
           orientation: 'portrait',
         }}>
 
-        <Stack.Screen name="WelcomeScreen" component={Screens.WelcomeScreen} />
+        <Stack.Screen name="LoginScreen" component={Screens.LoginScreen} />
           <Stack.Screen name="MybottomTabs" component={MybottomTabs} />
+        <Stack.Screen name="SignUpScreen" component={Screens.SignUpScreen} />
+        <Stack.Screen name="WelcomeScreen" component={Screens.WelcomeScreen} />
+        <Stack.Screen name="GetStartedScreen" component={Screens.GetStartedScreen} />
           <Stack.Screen
             name="Home"
             component={Screens.HomeScreen}

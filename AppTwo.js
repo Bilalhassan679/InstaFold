@@ -51,7 +51,7 @@ function AppTwo() {
       
       :
       <>
-        <SafeAreaView/>
+        {/* <SafeAreaView/> */}
         <NavigationContainer >
           <StackNavigatior />
         </NavigationContainer>
