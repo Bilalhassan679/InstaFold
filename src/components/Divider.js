@@ -6,10 +6,9 @@ const Divider = ({dividerStyle}) => {
         <View
             style={{
                 ...dividerStyle,
-                // borderBottomColor: 'rgba(0, 0, 0, 0.2);',
+
+                // borderBottomColor: 'rgba(0, 0, 0, 0.1);',
                 borderBottomWidth: StyleSheet.hairlineWidth,
-                padding: 5,
-                marginBottom: hp('3.5')
             }}
         />
     );

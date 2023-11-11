@@ -13,15 +13,18 @@ export default function StackNavigatior() {
     <> 
       <Stack.Navigator
         screenOptions={{
-          animation: 'slide_from_left',
+          animation: 'slide_from_right',
           headerShown: false,
           orientation: 'portrait',
         }}>
 
+          <Stack.Screen name="ContractorScreen" component={Screens.ContractorScreen} />
+          <Stack.Screen name="ServicesLocation" component={Screens.ServicesLocation} />
+          <Stack.Screen name="MybottomTabs" component={MybottomTabs} />
+          <Stack.Screen name="DetailScreen" component={Screens.DetailScreen} />
         <Stack.Screen name="WelcomeScreen" component={Screens.WelcomeScreen} />
         <Stack.Screen name="SignUpScreen" component={Screens.SignUpScreen} />
         <Stack.Screen name="LoginScreen" component={Screens.LoginScreen} />
-          <Stack.Screen name="MybottomTabs" component={MybottomTabs} />
         <Stack.Screen name="GetStartedScreen" component={Screens.GetStartedScreen} />
           <Stack.Screen
             name="Home"

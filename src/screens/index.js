@@ -5,3 +5,6 @@ export {default as ProfileScreen} from './ProfileScreen';
 export {default as GetStartedScreen} from './GetStartedScreen';
 export {default as LoginScreen} from './LoginScreen';
 export {default as SignUpScreen} from './SignUpScreen';
+export {default as DetailScreen} from './DetailScreen';
+export {default as ServicesLocation} from './ServicesLocation';
+export {default as ContractorScreen} from './ContractorScreen';

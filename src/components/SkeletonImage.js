@@ -4,7 +4,7 @@ import {View} from 'react-native';
 import {Blurhash} from 'react-native-blurhash';
 import FastImage from 'react-native-fast-image';
 
-const BlurImage = ({styles, uri, blurhash, radius, children}) => {
+const SkeletonImage = ({styles, uri, blurhash, radius, children}) => {
   const [load, setLoad] = useState(true);
   const imageSource = {uri, priority: FastImage.priority.high};
   // const imageSource = uri
@@ -34,4 +34,4 @@ const BlurImage = ({styles, uri, blurhash, radius, children}) => {
   );
 };
 
-export default React.memo(BlurImage);
+export default React.memo(SkeletonImage);

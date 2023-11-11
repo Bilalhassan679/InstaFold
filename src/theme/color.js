@@ -9,6 +9,9 @@ export const colors = {
     bgLogin: 'rgba(17, 48, 95, 0.8)',
     red: 'red',
     purpleColor:'#522888',
+    purpleColorOpacity:'rgba(82, 40, 136, 0.5)',
     halfWhite:'rgba(255, 255, 255, 0.5)',
-    halfWhite1:'rgba(255, 255, 255, 0.8)'
+    halfWhite1:'rgba(255, 255, 255, 0.8)',
+    bgGray:"#F6F9FB",
+    
 }

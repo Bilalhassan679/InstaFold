@@ -6,11 +6,21 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { color } from '../config/color';
 const ButtonComponent = ({onPress,text,buttonStyle}) => {
   return (
-    <TouchableOpacity onPress={onPress} style={{...styles.container,...buttonStyle
+    <TouchableOpacity onPress={onPress} style={{...styles.container,...buttonStyle,
     
     }}>
+
+      {text =='Back' ?
+        <>
+      <Ionicons name={'arrow-back'} size={hp('2')} color={color.black} style={{marginRight:wp('2')}} />
+        <Text style={styles.text}>{text}</Text>
+      </>
+      :
+      <>
       <Text style={styles.text}>{text}</Text>
-      <Ionicons name={'arrow-forward'} size={hp('2')} color={color.black} />
+      <Ionicons name={'arrow-forward'} size={hp('2')} color={color.black} style={{marginLeft:wp('2')}}/>
+      </>
+        }
     </TouchableOpacity>
   )
 }

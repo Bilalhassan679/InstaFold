@@ -18,9 +18,12 @@ const {width, height} = Dimensions.get('window');
   scale16: Math.round(width / 27),
   scale18: Math.round(width / 24),
   scale20: Math.round(width / 21.5),
-  scale22: Math.round(width / 19.5), // Added scale22
+  scale22: Math.round(width / 19.5),
   scale24: Math.round(width / 18),
   scale32: Math.round(width / 13.5),
+  scale34: Math.round(width / 12),
+  scale38: Math.round(width / 9.5),
+  scale40: Math.round(width / 10), 
   small: 8,
   medium: 10,
   regular: 12,
