@@ -8,3 +8,7 @@ export {default as SignUpScreen} from './SignUpScreen';
 export {default as DetailScreen} from './DetailScreen';
 export {default as ServicesLocation} from './ServicesLocation';
 export {default as ContractorScreen} from './ContractorScreen';
+export {default as ContractorProfile} from './ContractorProfile';
+export {default as Servicedetails} from './Servicedetails';
+export {default as ReviewScreen} from './ReviewScreen';
+export {default as ContractScreen} from './ContractScreen';

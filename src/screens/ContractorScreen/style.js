@@ -30,6 +30,29 @@ export const styles = StyleSheet.create({
     },
     star:{
         flexDirection:'row',
+        alignItems:'center'
         
-    }
+    },
+    bottom:{
+        height:hp('32'),
+        alignItems:'center',
+    },
+    filterTitle:{
+        fontSize:FontSize.scale22,
+        fontWeight:'300',
+        color:colors.black,
+        marginBottom:hp('2'),
+    },
+    filterType:{
+        fontSize:FontSize.scale20,
+        fontWeight:'400',
+        color:colors.black,
+        marginRight:wp('5')
+        
+    },
+    bottom:{
+        height:hp('32'),
+        alignItems:'center',
+    },
+
 })  

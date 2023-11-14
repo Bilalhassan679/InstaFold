@@ -44,7 +44,6 @@ function AppTwo() {
   }, []);
   return (
     <>
-         <StatusBar backgroundColor={'#ffffff'} barStyle={'light-content'} />
 
       {isVisible ?
       SplashScreen()

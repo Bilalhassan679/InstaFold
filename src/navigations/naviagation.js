@@ -19,6 +19,10 @@ export default function StackNavigatior() {
         }}>
 
           <Stack.Screen name="ContractorScreen" component={Screens.ContractorScreen} />
+          <Stack.Screen name="ContractScreen" component={Screens.ContractScreen} />
+          <Stack.Screen name="ReviewScreen" component={Screens.ReviewScreen} />
+          <Stack.Screen name="Servicedetails" component={Screens.Servicedetails} />
+          <Stack.Screen name="ContractorProfile" component={Screens.ContractorProfile} />
           <Stack.Screen name="ServicesLocation" component={Screens.ServicesLocation} />
           <Stack.Screen name="MybottomTabs" component={MybottomTabs} />
           <Stack.Screen name="DetailScreen" component={Screens.DetailScreen} />
