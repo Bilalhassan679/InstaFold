@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
     },
     star:{
         flexDirection:'row',
-        alignItems:'center'
+        alignItems:'center',
         
     },
     wait:{

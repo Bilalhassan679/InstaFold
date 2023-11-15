@@ -136,7 +136,7 @@ const ReviewScreen = ({navigation,route}) => {
         <TextComponent numberOfLines={2} text={`You’ve booked ${items.name}`} styles={{...styles.modalText,}}/>
         <TextComponent numberOfLines={2} text={'Morgan L. is currently offline and will reach out once available in the next day or so.'} styles={{...styles.textDes,color:colors.placeholderColor}}/>
      
-         <ButtonComponent  onPress={()=>{navigation.navigate('ContractScreen',{items}),setModalVisible(false)}}  text={'Select & Continue'}/>
+         <ButtonComponent  onPress={()=>{navigation.navigate('ContractScreen', { items}),setModalVisible(false)}}  text={'Select & Continue'}/>
          
         </View>
       </BottomModal>
